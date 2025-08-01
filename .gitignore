@@ -54,3 +54,31 @@ pids
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# NestJS specific
+*.tsbuildinfo
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# Package manager locks (uncomment if you want to ignore them)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Security and secrets
+.secrets/
+*.pem
+*.key
+*.crt
+
+# Cache directories
+.cache/
+.eslintcache
+.swc/
