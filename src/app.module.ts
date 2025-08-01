@@ -27,9 +27,7 @@ import { ModuleWithCommonMiddleware } from "./presentation/middleware";
         externalConfig,
       ],
       envFilePath: [
-        `.env.${process.env.NODE_ENV || "development"}`,
-        ".env.local",
-        ".env",
+        `src/infrastructure/config/.env.${process.env.NODE_ENV || "development"}`,
       ],
     }),
     UserModule,
